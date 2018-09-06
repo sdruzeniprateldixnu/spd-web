@@ -1,7 +1,41 @@
+body {
+    font-family: 'Mukta', sans-serif;
+}
+
+h2 {
+    margin: 4px 0;
+    font-size: 200%;
+}
+
+p {
+    margin: 4px 0 10px;
+    font-size: 130%;
+}
+
 .center {
     text-align: center;
 }
 
+.box {
+    width: 50%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
 .top {
     margin-top: 15px;
+}
+
+footer {
+    height: 60px;
+    background-color: gray;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+footer a {
+    margin-right: 10px;
 }
