@@ -1,0 +1,15 @@
+language: php
+php:
+- 7.0
+env:
+script:
+- export SSHPASS=$DEPLOY_PASS
+- sshpass -e ssh -oStrictHostKeyChecking=no $DEPLOY_USER@$DEPLOY_HOST $DEPLOY_PATH/deploy.sh
+addons:
+  apt:
+    packages:
+    - sshpass
+sudo: false
+branches:
+  only:
+  - master
