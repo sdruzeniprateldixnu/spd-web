@@ -1,0 +1,11 @@
+version: "2"
+services:
+    web:
+        build: ./docker/dev
+        ports:
+          - "8080:80"
+        volumes:
+          - .:/var/www/html
+        environment:
+          - PHP_IDE_CONFIG=serverName=docker-spd
+          - COMPOSER_PROCESS_TIMEOUT=900
