@@ -8,3 +8,6 @@ cd spd-web
 docker-compose up -d
 curl http://localhost:8080
 ```
+
+## Deploy
+Project is automatically deployed by TravisCI. (master branch)
