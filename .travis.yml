@@ -3,7 +3,7 @@ php:
 - 7.0
 env:
 script:
-- sshpass -e -p $DEPLOY_PASS ssh -oStrictHostKeyChecking=no $DEPLOY_USER@$DEPLOY_HOST $DEPLOY_PATH/deploy.sh
+- sshpass -p $DEPLOY_PASS ssh -oStrictHostKeyChecking=no $DEPLOY_USER@$DEPLOY_HOST $DEPLOY_PATH/deploy.sh
 addons:
   apt:
     packages:
